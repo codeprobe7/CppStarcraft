@@ -155,6 +155,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="CppStarcraft.cpp" />
+    <ClCompile Include="Library\Unit.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Library\FVector2.h" />
+    <ClInclude Include="Library\Unit.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
