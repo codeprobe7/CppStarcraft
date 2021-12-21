@@ -16,4 +16,17 @@ struct FVector2
         X = _X;
         Y = _Y;
     }
+
+    bool operator==(const FVector2 Equal) const
+    {
+        return X == Equal.X && Y == Equal.Y;
+    }
+
+    FVector2 operator+(const FVector2 Add) const
+    {
+        FVector2 Self;
+        Self.X = X + Add.X;
+        Self.Y = Y + Add.Y;
+        return Self;
+    }
 };
