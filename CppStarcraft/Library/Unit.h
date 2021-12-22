@@ -30,10 +30,7 @@ public:
         Coord = _Coord;
     }
 
-    virtual void Info()
-    {
-        std::cout << "Name : " << Name;
-    }
+    virtual void Info();
 
     __forceinline std::string GetName() const {return Name;}
     __forceinline float GetDamage() const { return Damage; }

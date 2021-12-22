@@ -1,5 +1,10 @@
 ﻿#include "Unit.h"
 
+void Unit::Info()
+{
+    std::cout << "Name : " << Name << "  Hp : " << Hp << "  Coord : " << Coord << std::endl;
+}
+
 void Unit::Attack(Unit* Target, float _Damage)
 {
     if (Target)
