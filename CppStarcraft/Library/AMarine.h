@@ -4,9 +4,12 @@
 class AMarine : public Unit
 {
 public:
+
+    using Unit :: Unit;
+    
     void Info() override;
     
-    ~AMarine()
+    ~AMarine() override
     {
     }
 };
