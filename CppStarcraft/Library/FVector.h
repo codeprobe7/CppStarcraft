@@ -29,4 +29,18 @@ struct FVector2
         Self.Y = Y + Add.Y;
         return Self;
     }
+    
+    friend std::ostream& operator<<(std::ostream& os,const FVector2& Vector2)
+    {
+        os << "("<<Vector2.X << ", " << Vector2.Y << ")";
+        return os;
+    }
+};
+
+
+struct FVector3
+{
+    int X;
+    int Y;
+    int Z;
 };
